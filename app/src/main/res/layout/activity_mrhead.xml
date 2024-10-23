@@ -31,16 +31,16 @@
 		app:layout_constraintStart_toStartOf="parent"
 		android:layout_marginTop="16dp"/>
 
+
 	<TextView
 		android:id="@+id/tvPassword"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
 		android:text="Password"
 		android:textSize="18sp"
-		app:layout_constraintTop_toBottomOf="@id/tvEmail"
 		app:layout_constraintStart_toStartOf="parent"
-		android:layout_marginTop="16dp"/>
-
+		app:layout_constraintTop_toBottomOf="@id/tvEmail" />
 
 	<ImageView
 		android:id="@+id/imgBody"
@@ -120,82 +120,83 @@
 		android:id="@+id/containerCheckbox"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
 		android:orientation="vertical"
 		android:paddingLeft="160dp"
-		android:layout_marginTop="10dp"
-		app:layout_constraintTop_toBottomOf="@id/imgBody"
 		app:layout_constraintBottom_toBottomOf="parent"
-		tools:ignore="MissingConstraints">
+		app:layout_constraintTop_toBottomOf="@id/imgBody"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="MissingConstraints"
+		tools:layout_editor_absoluteX="0dp">
 
 
 		<CheckBox
 			android:id="@+id/checkHead"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Body"
+			android:layout_height="33dp"
 			android:checked="true"
-			android:textColor="@color/black"/>
+			android:text="Body"
+			android:textColor="@color/black" />
 
 		<CheckBox
 			android:id="@+id/checkHair"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Hair"
+			android:layout_height="29dp"
 			android:checked="true"
+			android:text="Hair"
 			android:textColor="@color/black"
-			app:layout_constraintTop_toBottomOf="@id/checkHead"/>
+			app:layout_constraintTop_toBottomOf="@id/checkHead" />
 
 		<CheckBox
 			android:id="@+id/checkEyebrow"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Eyebrow"
+			android:layout_height="29dp"
 			android:checked="true"
-			android:textColor="@color/black"/>
+			android:text="Eyebrow"
+			android:textColor="@color/black" />
 
 		<CheckBox
 			android:id="@+id/checkEyes"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Eyes"
+			android:layout_height="26dp"
 			android:checked="true"
+			android:text="Eyes"
 			android:textColor="@color/black"
-			app:layout_constraintTop_toBottomOf="@id/checkHead"/>
+			app:layout_constraintTop_toBottomOf="@id/checkHead" />
 
 		<CheckBox
 			android:id="@+id/checkMoustache"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Moustache"
+			android:layout_height="30dp"
 			android:checked="true"
-			android:textColor="@color/black"/>
+			android:text="Moustache"
+			android:textColor="@color/black" />
 
 		<CheckBox
 			android:id="@+id/checkBeard"
 			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Beard"
+			android:layout_height="37dp"
 			android:checked="true"
+			android:text="Beard"
 			android:textColor="@color/black"
-			app:layout_constraintTop_toBottomOf="@id/checkHead"/>
-
+			app:layout_constraintTop_toBottomOf="@id/checkHead" />
 
 
 	</LinearLayout>
+
 	<Button
-		android:id="@+id/btnContactUs"
-		android:layout_width="match_parent"
-		android:layout_height="50dp"
-		android:background="@drawable/bg_button"
+		android:id="@+id/btnProfile"
+		android:layout_width="255dp"
+		android:layout_height="47dp"
 		android:layout_marginTop="30dp"
-		android:text="Contact Us"
+		android:background="@drawable/bg_button"
+		android:text="Profile Developer"
 		android:textAllCaps="true"
 		android:textSize="16sp"
 		android:textStyle="bold"
-		android:layout_marginBottom="30dp"
-		app:layout_constraintTop_toBottomOf="@id/containerCheckbox"
 		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toRightOf="parent"/>
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/containerCheckbox" />
 
 
 

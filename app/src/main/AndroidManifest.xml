@@ -13,10 +13,12 @@
 		android:theme="@style/Theme.Praktikum"
 		tools:targetApi="31">
 		<activity
-			android:name=".ContactUsActivity"
-			android:exported="false" />
+			android:name=".ProfileActvity"
+			android:exported="false">
+
+		</activity>
 		<activity
-			android:name=".MrheadActivity"
+			android:name=".ContactUsActivity"
 			android:exported="false" />
 		<activity
 			android:name=".MainActivity"
@@ -26,6 +28,11 @@
 
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
+		</activity>
+		<activity
+			android:name=".MrheadActivity"
+			android:exported="false">
+
 		</activity>
 	</application>
 

@@ -101,10 +101,10 @@ public class MrheadActivity extends AppCompatActivity {
             }
         });
 
-        Button btnContactUs = findViewById(R.id.btnContactUs);
+        Button btnProfile = findViewById(R.id.btnProfile);
 
-        btnContactUs.setOnClickListener(v -> {
-            Intent intent = new Intent(MrheadActivity.this, ContactUsActivity.class);
+        btnProfile.setOnClickListener(v -> {
+            Intent intent = new Intent(MrheadActivity.this, ProfileActvity.class);
             startActivity(intent);
         });
 
